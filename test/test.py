@@ -1,4 +1,5 @@
 import string
 
-print("hoge")
+def hoge:
+  print("hoge")
 
