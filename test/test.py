@@ -1,5 +1,4 @@
 import string
 
-def hoge:
-  print("hoge")
-
+dev hander
+    print("hoge")

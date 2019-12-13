@@ -3,12 +3,12 @@ import pprint
 import json
 
 #レストラン検索APIのURL
-url = "https://api.gnavi.co.jp/RestSearchAPI/v3/"
+url = "https://api.tabelom.co.jp/RestSearchAPI/v3/"
 
 #パラメータの設定
 params={}
 params["keyid"] = "***************" #取得したアクセスキー
-params["freeword"] = "新橋,ランチ,10000"
+params["freeword"] = "虎ノ門,ディナー,10000"
 
 
 if __name__ == "__main__":
@@ -27,3 +27,5 @@ if __name__ == "__main__":
     print(result_api['rest'][0]['code']['category_name_l'][:2])
     # ['すし・魚料理・シーフード', '日本料理・郷土料理']リストは2個しかないから、全部出るんだけどね。
     print(result_api['rest'][0]['budget'])
+    # ['すし・魚料理・シーフード', '日本料理・郷土料理']リストは2個しかないから、全部出るんだけどね。
+    print(result_api['rest'][0]['dinner'])
